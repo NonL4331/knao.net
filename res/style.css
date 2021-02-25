@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* { 
+	font-family: 'Noticia Text', serif;
+}
+
+
+h1 { margin: 18px 0; font-weight: bolder; }
+
+body {
+	align-items: center;
+	margin: 0 auto;
+	width: 80vw;
+}
+
+.header img {
+	float: left;
+	width: 100px;
+	height: 100px;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+}
+
+.header h1 {
+	position: relative;
+	top: 12px;
+	left: 6px;
+}
+
+
+.navbar {
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar>li {
+	display: inline;
+	float: left;
+	padding: 6px;
+}
+
+.navbar>li>a {
+	color: black;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+}
+
+@media only screen and (max-width:800px) {
+	body {
+		margin: 0 2.5vw;
+		width: 100%;
+	}
+	* {
+		max-width: 95vw;
+	}
+}
