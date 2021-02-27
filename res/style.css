@@ -7,53 +7,78 @@
 	--sec-col: #DF2935;
 	--text-col: var(--fg-col);
 	--link-col: var(--fg-col);
-	--border: solid 0.16em var(--fg-col);
+	--border: solid 0.16em var(--fg-col)
 }
 
 * {
 	font-family: 'Space Mono', monospace;
+	font-variant-ligatures: none
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	font-size: 1em;
-	margin: 0;
+	margin: 0
 }
 
-a { text-decoration: none; }
+a {
+	text-decoration: none
+}
 
-a:link { color: #ff1493; }
-a:visited { color: #7F397A; }
-a:hover { color: #79B5B9; }
-a:active { color: #8f004c; }
+a:link {
+	color: #ff1493
+}
 
-.anchor:link { color: var(--text-col) }
-.anchor:visited { color: var(--text-col) }
-.anchor:hover { color: var(--text-col) }
-.anchor:active { color: var(--text-col) }
+a:visited {
+	color: #7F397A
+}
+
+a:hover {
+	color: #79B5B9
+}
+
+a:active {
+	color: #8f004c
+}
+
+.anchor:link {
+	color: var(--text-col)
+}
+
+.anchor:visited {
+	color: var(--text-col)
+}
+
+.anchor:hover {
+	color: var(--text-col)
+}
+
+.anchor:active {
+	color: var(--text-col)
+}
 
 body {
 	background-color: var(--bg-col);
-	color: var(--fg-col);
+	color: var(--fg-col)
 }
 
 hr {
 	border: none;
 	border-top: var(--border);
 	margin: 0.85em auto;
-	width: calc(100% - 1em);
+	width: calc(100% - 1em)
 }
 
 #container {
 	max-width: 800px;
 	margin-right: auto;
-	margin-left: auto;
+	margin-left: auto
 }
 
 .block {
 	border-spacing: 0;
 	border-bottom: var(--border);
-	width: 100%;
+	width: 100%
 }
 
 .block .header {
@@ -61,14 +86,12 @@ hr {
 	border-bottom: none;
 	padding: 0.5em;
 	margin: 0.5em;
-	text-align: center;
+	text-align: center
 }
 
 .block .body {
 	border: var(--border);
 	border-bottom: none;
 	padding: 0.5em;
-	margin: 0.5em;
+	margin: 0.5em
 }
-
-@media only screen and (max-width:800px) {  }
