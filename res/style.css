@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 :root {
-	--fg-col: white;
-	--bg-col: #222;
-	--pri-col: #66FF66;
-	--sec-col: #F58471;
+	--fg-col: #FFF;
+	--bg-col: #131316;
+	--pri-col: #4D9093;
+	--sec-col: #DF2935;
 	--text-col: var(--fg-col);
 	--link-col: var(--fg-col);
 	--border: solid 0.16em var(--fg-col);
@@ -23,21 +22,15 @@ h1,h2,h3,h4,h5,h6 {
 
 a { text-decoration: none; }
 
-a:link {
-	color: var(--pri-col);
-}
+a:link { color: #ff1493; }
+a:visited { color: #7F397A; }
+a:hover { color: #79B5B9; }
+a:active { color: #8f004c; }
 
-a:visited {
-	color: var(--sec-col);
-}
-
-a:hover {
-	color: hotpink;
-}
-
-a:active {
-	color: blue;
-} 
+.anchor:link { color: var(--text-col) }
+.anchor:visited { color: var(--text-col) }
+.anchor:hover { color: var(--text-col) }
+.anchor:active { color: var(--text-col) }
 
 body {
 	background-color: var(--bg-col);
