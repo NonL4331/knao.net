@@ -1,59 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-* { 
-	font-family: 'Noticia Text', serif;
+:root {
+	--fg-col: white;
+	--bg-col: #222;
+	--pri-col: #66FF66;
+	--sec-col: #F58471;
+	--text-col: var(--fg-col);
+	--link-col: var(--fg-col);
+	--border: solid 0.16em var(--fg-col);
 }
 
+* {
+	font-family: 'Space Mono', monospace;
+}
 
-h1 { margin: 18px 0; font-weight: bolder; }
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+	font-size: 1em;
+	margin: 0;
+}
+
+a { text-decoration: none; }
+
+a:link {
+	color: var(--pri-col);
+}
+
+a:visited {
+	color: var(--sec-col);
+}
+
+a:hover {
+	color: hotpink;
+}
+
+a:active {
+	color: blue;
+} 
 
 body {
-	align-items: center;
-	margin: 0 auto;
-	width: 80vw;
+	background-color: var(--bg-col);
+	color: var(--fg-col);
 }
 
-.header img {
-	float: left;
-	width: 100px;
-	height: 100px;
-	image-rendering: crisp-edges;
-	image-rendering: pixelated;
+hr {
+	border: none;
+	border-top: var(--border);
+	margin: 0.85em auto;
+	width: calc(100% - 1em);
 }
 
-.header h1 {
-	position: relative;
-	top: 12px;
-	left: 6px;
+#container {
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-
-.navbar {
-	list-style-type: none;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
+.block {
+	border-spacing: 0;
+	border-bottom: var(--border);
+	width: 100%;
 }
 
-.navbar>li {
-	display: inline;
-	float: left;
-	padding: 6px;
-}
-
-.navbar>li>a {
-	color: black;
-	display: block;
+.block .header {
+	border: var(--border);
+	border-bottom: none;
+	padding: 0.5em;
+	margin: 0.5em;
 	text-align: center;
-	font-weight: bold;
 }
 
-@media only screen and (max-width:800px) {
-	body {
-		margin: 0 2.5vw;
-		width: 100%;
-	}
-	* {
-		max-width: 95vw;
-	}
+.block .body {
+	border: var(--border);
+	border-bottom: none;
+	padding: 0.5em;
+	margin: 0.5em;
 }
+
+@media only screen and (max-width:800px) {  }
