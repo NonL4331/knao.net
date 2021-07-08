@@ -2,28 +2,28 @@
 	font-family: 'Space Mono';
 	font-style: italic;
 	font-weight: 400;
-	font-display: optional;
+	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/spacemono/v6/i7dNIFZifjKcF5UAWdDRYER8QA.ttf) format('truetype');
 }
 @font-face {
 	font-family: 'Space Mono';
 	font-style: italic;
 	font-weight: 700;
-	font-display: optional;
+	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/spacemono/v6/i7dSIFZifjKcF5UAWdDRYERE_FeaGw.ttf) format('truetype');
 }
 @font-face {
 	font-family: 'Space Mono';
 	font-style: normal;
 	font-weight: 400;
-	font-display: optional;
+	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/spacemono/v6/i7dPIFZifjKcF5UAWdDRUEY.ttf) format('truetype');
 }
 @font-face {
 	font-family: 'Space Mono';
 	font-style: normal;
 	font-weight: 700;
-	font-display: optional;
+	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/spacemono/v6/i7dMIFZifjKcF5UAWdDRaPpZYFI.ttf) format('truetype');
 }
 
